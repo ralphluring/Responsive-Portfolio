@@ -19,7 +19,7 @@
       display: grid;
       grid-template-rows: auto 1fr auto;
       grid-template-columns: 1fr;
-      background-color:rgb(255,255,250);
+      background-color: #A5FFBF;
       min-height: 100vh;
       font-family: 'Mukta', sans-serif;
   }
@@ -114,6 +114,7 @@
 
   .content__body{
       padding: 20px;
+      width:100%;
   }
 
   #float__img{
@@ -129,7 +130,7 @@
       padding: 10px;
       line-height: 1.3rem;
       color: #2D4534;
-      width: 80%;
+      width: 100%;
   }
 /* Styles for the portfolio work best with images that all have the same ratio */
   .portfolio__grid{
@@ -154,6 +155,36 @@
   .portfolio__grid h3{
     box-shadow: 0px 2px 1px #2D4534;
     padding: 5px;
+  }
+
+  #contact{
+    display: grid;
+    grid-gap: 15px;
+  }
+
+  .form__input{
+    width:100%;
+    font-size: 1rem;
+    background-color: #B2FFF4;
+    border-width: 0px;
+    box-shadow: 0px 2px 1px #2D4534;
+    padding: 20px 0px 20px 10px;
+    color:#2D4534;
+  }
+
+  .contact__submit{
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0px 2px 1px #2D4534;
+  }
+
+  #contact-submit{
+    color:#2D4534;
+    font-size: 1.4rem;
+    background-color: #B2FFF4;
+    border-width: 0px;
   }
   
 /* footer styles */
