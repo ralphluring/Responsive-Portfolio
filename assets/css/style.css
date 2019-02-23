@@ -1,0 +1,175 @@
+/* logo and animations */
+.logo svg{
+    width: 100px;
+    height: 100px;
+}
+
+.nav__link:hover{
+  animation: movebtop 1s infinite;
+}
+
+@keyframes movebtop {
+  from {
+    transform: scale(.5);
+  }
+}
+
+/* majour layout styles */
+  .container{
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      background-color:rgb(255,255,250);
+      min-height: 100vh;
+      font-family: 'Mukta', sans-serif;
+  }
+
+  .header{
+    background-color:#A5FFBF;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav{
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      padding: 5px;
+  }
+
+  .nav__list{
+      display: flex;
+      align-items: center;
+      width:70%;
+      justify-content: space-around;
+      padding-top: 10px;
+  }
+
+  .nav__link{
+    width: 30%;
+    padding: 0px 10px;;
+  }
+
+  .nav__anchor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+  .nav__img{
+    height: 75px;
+    width: 75px;
+    color: #2D4534;
+    fill: #2D4534;
+
+  }
+
+  .nav__text{
+    text-decoration: none;
+    color:#000;
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* body styles */
+
+  .content__container{
+      background-color: #B2FFF4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .content{
+      width: 75%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .content__header{
+      display: flex;
+      padding: 0px;
+      justify-content: center;
+      width: 100%; 
+      box-shadow: 0px 2px 1px #2D4534;
+  }
+
+  .content__header h1{
+      font-size:1.5rem;
+      color: #2D4534; 
+      padding: 20px;
+  }
+
+
+  .content__body{
+      padding: 20px;
+  }
+
+  #float__img{
+    float:left;
+    padding: 10px;
+  }
+
+  .about__img{
+    
+  }
+
+  .content__body p{
+      padding: 10px;
+      line-height: 1.3rem;
+      color: #2D4534;
+      width: 80%;
+  }
+/* Styles for the portfolio work best with images that all have the same ratio */
+  .portfolio__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+  }
+   .portfolio__img{
+    z-index: -1;
+  }
+
+  .portfolio__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio__cap{
+
+    text-align: center;
+  }
+
+  .portfolio__grid h3{
+    box-shadow: 0px 2px 1px #2D4534;
+    padding: 5px;
+  }
+  
+/* footer styles */
+.footer{
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .portfolio__grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
